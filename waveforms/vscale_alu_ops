@@ -1,0 +1,14 @@
+0 ADD
+1 SLL
+4 XOR
+6 OR
+7 AND
+5 SRL
+8 SEQ
+9 SNE
+a SUB
+b SRA
+c SLT
+d SGE
+e SLTU
+f SGEU

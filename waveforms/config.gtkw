@@ -1,0 +1,64 @@
+[*]
+[*] GTKWave Analyzer v3.3.58 (w)1999-2014 BSI
+[*] Wed Nov  9 00:07:02 2016
+[*]
+[dumpfile] "/home/gon1332/Development/Repositories/vscale/output/rv32ui-p-beq.vpd"
+[dumpfile_mtime] "Wed Nov  9 00:03:45 2016"
+[dumpfile_size] 514204
+[savefile] "/home/gon1332/Development/Repositories/vscale/waveforms/config.gtkw"
+[timestart] 0
+[size] 1366 715
+[pos] -1 -1
+*-15.016051 43200 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] vscale_hex_tb.
+[treeopen] vscale_hex_tb.DUT.
+[treeopen] vscale_hex_tb.DUT.vscale.
+[treeopen] vscale_hex_tb.DUT.vscale.pipeline.
+[sst_width] 296
+[signals_width] 126
+[sst_expanded] 1
+[sst_vpaned_height] 198
+@28
+vscale_hex_tb.DUT.vscale.pipeline.regfile.clk
+vscale_hex_tb.DUT.reset
+vscale_hex_tb.DUT.resetn
+@20000
+-
+@24
+vscale_hex_tb.DUT.vscale.pipeline.PC_IF[31:0]
+@200
+-
+-REG_FILE
+@28
+vscale_hex_tb.DUT.vscale.pipeline.regfile.clk
+@2022
+^1 /home/gon1332/Development/Repositories/vscale/waveforms/vscale_regs
+vscale_hex_tb.DUT.vscale.pipeline.regfile.ra1[4:0]
+^1 /home/gon1332/Development/Repositories/vscale/waveforms/vscale_regs
+vscale_hex_tb.DUT.vscale.pipeline.regfile.ra2[4:0]
+@22
+vscale_hex_tb.DUT.vscale.pipeline.regfile.rd1[31:0]
+vscale_hex_tb.DUT.vscale.pipeline.regfile.rd2[31:0]
+@28
+[color] 3
+vscale_hex_tb.DUT.vscale.pipeline.regfile.wen
+@2022
+^1 /home/gon1332/Development/Repositories/vscale/waveforms/vscale_regs
+vscale_hex_tb.DUT.vscale.pipeline.regfile.wa[4:0]
+@28
+[color] 3
+vscale_hex_tb.DUT.vscale.pipeline.regfile.wen_internal
+@22
+vscale_hex_tb.DUT.vscale.pipeline.regfile.wd[31:0]
+@200
+-
+-ALU
+@2023
+^2 /home/gon1332/Development/Repositories/vscale/waveforms/vscale_alu_ops
+vscale_hex_tb.DUT.vscale.pipeline.alu.op[3:0]
+@22
+vscale_hex_tb.DUT.vscale.pipeline.alu.in1[31:0]
+vscale_hex_tb.DUT.vscale.pipeline.alu.in2[31:0]
+vscale_hex_tb.DUT.vscale.pipeline.alu.out[31:0]
+[pattern_trace] 1
+[pattern_trace] 0
