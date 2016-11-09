@@ -3,10 +3,10 @@
 # vscale
 
 In order to build and test vscale using the supplied makefile,
-Synopsys VCS must be installed and on the path.
+Icarus Verilog must be installed and be on the path.
 
 ```
-git clone git@github.com:ucb-bar/vscale.git
+git clone git@github.com:gon1332/vscale.git
 cd vscale
 make
 make run-asm-tests
