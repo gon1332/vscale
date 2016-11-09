@@ -20,6 +20,8 @@ module vscale_hex_tb();
 
    reg [127:0]                hexfile [hexfile_words-1:0];
 
+   reg res;
+
    vscale_sim_top DUT(
                       .clk(clk),
                       .reset(reset),
@@ -44,9 +46,9 @@ module vscale_hex_tb();
    integer j = 0;
 
    initial begin
-      $value$plusargs("max-cycles=%d", max_cycles);
-      $value$plusargs("loadmem=%s", loadmem);
-      $value$plusargs("vpdfile=%s", vpdfile);
+      res = $value$plusargs("max-cycles=%d", max_cycles);
+      res = $value$plusargs("loadmem=%s", loadmem);
+      res = $value$plusargs("vpdfile=%s", vpdfile);
       if (loadmem) begin
          $readmemh(loadmem, hexfile);
          for (i = 0; i < hexfile_words; i = i + 1) begin
@@ -55,8 +57,8 @@ module vscale_hex_tb();
             end
          end
       end
-      $vcdplusfile(vpdfile);
-      $vcdpluson();
+      $dumpfile(vpdfile);
+      $dumpvars(0, DUT);
       // $vcdplusmemon();
       #100 reset = 0;
    end // initial begin
@@ -70,10 +72,10 @@ module vscale_hex_tb();
       if (!reset) begin
          if (htif_pcr_resp_valid && htif_pcr_resp_data != 0) begin
             if (htif_pcr_resp_data == 1) begin
-               $vcdplusclose;
+               //$vcdplusclose;
                $finish;
             end else begin
-               $vcdplusclose;
+               //$vcdplusclose;
                $sformat(reason, "tohost = %d", htif_pcr_resp_data >> 1);
             end
          end
@@ -82,7 +84,7 @@ module vscale_hex_tb();
 
       if (reason) begin
          $fdisplay(stderr, "*** FAILED *** (%s) after %d simulation cycles", reason, trace_count);
-         $vcdplusclose;
+         //$vcdplusclose;
          $finish;
       end
    end
