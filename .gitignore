@@ -5,3 +5,4 @@ output/*
 *DVEfiles*
 *.vcd
 *.vpd
+riscv_dasm
